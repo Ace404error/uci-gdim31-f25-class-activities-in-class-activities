@@ -1,7 +1,7 @@
 # in-class-activities
 ## Devlogs
 ### W1
-1. When the camera is moved out of the Cat GameObject parent group, the camera no longer follows the cat. That is, the camera won't move when the player presses the arrow keys. 
+1. When the camera is moved out of the Cat GameObject parent group, the camera no longer follows the cat. That is, the camera won't move when the player presses the arrow keys.
 
 2. Error: "Host type is not matching any asset type at Path Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader.UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)"
 
