@@ -6,7 +6,6 @@
 2. Error: "Host type is not matching any asset type at Path Packages/com.unity.render-pipelines.core/Editor/Lighting/ProbeVolume/RenderingLayerMask/TraceRenderingLayerMask.urtshader.UnityEditor.AssetPostprocessingInternal:PostprocessAllAssets (string[],string[],string[],string[],string[],bool)"
 
 ### W2
-### W2
 1. Variables r, g, and b, are all floats instead of integers, bools, and strings because float values are essentially equivalent to decimals or fractions. As these variables are numerical, they wouldn’t be bools, which are true or false statements. By extension, they also wouldn’t be strings, as these are lines of text. Compared to float values, integers only represent whole numbers. If colors were to be represented accurately, the ball GameObject would have to cycle through color values that may not be equivalent to a whole number, hence, the reason for using float values over integer values.
 
 2. Opposite to the r, g, and b variables, the _bounce variable represents a counter of how many times the ball GameObject bounces on the ground. As such, this value has to be an integer; it would be impossible to use decimal values to count the number of times a ball bounces.
