@@ -31,8 +31,9 @@
 #### Activity 2:
 
 
+
 #### Activity 3:
-1. I think the balls get extremely bright, if they bounce too many times because there is no parameter to reset their brightness to default after reaching a certain level of brightness.
+1. I think the balls get extremely bright if they bounce too many times because there is no parameter to reset their brightness after reaching a certain level.
 
 
 ## Open-Source Assets
