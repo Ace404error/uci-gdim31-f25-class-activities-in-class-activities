@@ -12,6 +12,26 @@
  
 3. There were two errors in this line of code. Not only was it missing a semi-colon, it was also missing the ”f” signifying the value to be a float, at the end of the 1.0. Without the semi-colon, it is as if the line of code never ended; the computer was expecting more details. Without the “f” at the end of 1.0, the computer attempted to read the value as a whole number, resulting in an error.
 
+
+### W3
+
+#### Activity 1:
+1. Table 9, parameters = bool, return type = string
+You’re building a visual novel, and you’re writing a method named GetResponse that gives you a character’s text response to a player’s dialogue choice. The relevant data for the dialogue choice are the player’s current friendship level with the character and a flag that tells you whether or not the player knows the character’s secret.
+
+2. Table 9, parameters = float
+You’re building a horror game, and you’re writing a method named SetLightDimness that makes the room’s lights brighter or darker based on the player’s current sanity level. The player’s sanity level is a number that goes from 0% - 100%. The method changes the light itself, so it doesn’t need any output.
+
+3. Table 9, parameters = float, return type = bool
+You’re building a rhythm game, and you’re writing a method named DidPlayerHitBeat that tells you whether or not the player accurately hit a beat based on the time that they pressed a key.
+
+#### Activity 2:
+
+
+#### Activity 3:
+1. I think the balls get extremely bright, if they bounce too many times because there is no parameter to reset their brightness to default after reaching a certain level of brightness.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
