@@ -36,11 +36,10 @@
 1. I think the balls get extremely bright if they bounce too many times because there is no parameter to reset their brightness after reaching a certain level.
 
 ### W4
-1. What solution did you come up with for the collider activity, and why? Specifically- which objects did you add Rigidbodies to, and which object(s) did you check Is Trigger on?
-        The cat object and the ball object should both have Rigidbody components, as they both need to be able to bounce and move around. These objects however, don't need the IsTrigger box checked. This is because checking this box would prevent these objects from having physics interactions. On the other hand, the goal object does need the IsTrigger box checked because it should not move when the cat or ball crash into it; we are only checking if the ball rolls into it. It doesn't need to move at all, so it doesn't need a Rigidbody component.
+1. The cat object and the ball object should both have Rigidbody components, as they both need to be able to bounce and move around. These objects however, don't need the IsTrigger box checked. This is because checking this box would prevent these objects from having physics interactions. On the other hand, the goal object does need the IsTrigger box checked because it should not move when the cat or ball crash into it; we are only checking if the ball rolls into it. It doesn't need to move at all, so it doesn't need a Rigidbody component.
+
    
-3. IF your game did not work perfectly the first time you tested it, talk about what you had to fix.
-        My game didn't work the first time. The Cat and ball objects were both spinning extremely rapidly when they collided with each other. Additionally, the cat object was spawning in the air. I had all of the colliders and IsTrigger boxes correct, the issue ended up being the size of the collider on the cat object. I was able to figure out that I could only change the size of the collider by going into the scene tab. I couldn't edit it at first because I was in the game tab.  
+3. My game didn't work the first time. The Cat and ball objects were both spinning extremely rapidly when they collided with each other. Additionally, the cat object was spawning in the air. I had all of the colliders and IsTrigger boxes correct, the issue ended up being the size of the collider on the cat object. I was able to figure out that I could only change the size of the collider by going into the scene tab. I couldn't edit it at first because I was in the game tab.  
    Table #10
 
 
