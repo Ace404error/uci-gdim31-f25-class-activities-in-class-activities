@@ -1,4 +1,6 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CatW5 : MonoBehaviour
 {
@@ -26,12 +28,21 @@ public class CatW5 : MonoBehaviour
         // using translation, _moveSpeed, and Time.deltaTime.
         //
         // Ask yourself:
-        //      Which axis moves the cat forwards and backwards?
+        //      Which axis moves the cat forwards and backwards? z
         //      Which Vector3 static property would be useful here based on
-        //          changing that axis?
+        //          changing that axis? back and forward
         //      Should I modify translation with Vector addition, or multiplication,
-        //          or both?
-        //
+        //          or both? multiply
+        if (Input.GetKey(KeyCode.W)) {
+            //for accessing keys, syntax = Input.GetKey(KeyCode.key)
+            //all letter keys for input have to be capitalized 
+            transform.Translate(Vector3.forward * _moveSpeed * Time.deltaTime);
+            //put calculation inside translate parenthesis
+        }
+        else if (Input.GetKey(KeyCode.S)) {
+            transform.Translate(Vector3.back * _moveSpeed * Time.deltaTime);
+        }
+
         // STEP 2
         // After Step 1 is working, add more code to make it possible to flip
         //      the player's control scheme.
@@ -42,9 +53,15 @@ public class CatW5 : MonoBehaviour
         //      them forwards.
         //
         // MULTIPLY one of your vectors with a certain value to do this. >:)
-
+        
         Vector3 translation = Vector3.zero;
         
+        if (_flipWSControls == true)
+        {
+            //double == for bools in if statements
+            translation *= -1;
+        }
+        //analyze later!!
 
 
         // STEP 1 & 2 ---------------------------------------------------------

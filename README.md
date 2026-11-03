@@ -45,7 +45,20 @@ Table #10
    
 3. My game didn't work the first time. The Cat and ball objects were both spinning extremely rapidly when they collided with each other. Additionally, the cat object was spawning in the air. I had all of the colliders and IsTrigger boxes correct, the issue ended up being the size of the collider on the cat object. I was able to figure out that I could only change the size of the collider by going into the scene tab. I couldn't edit it at first because I was in the game tab.  
    
+### W6
 
+Before doing anything, we will need to declare the DeerW5 class as a MonoBehavior class, so that it can be used as a component of the Deer GameObject.
+
+1. What member variable(s) does this class need? 
+
+We need a member variable to represent the Transform of the GameObject the deer will walk towards, as this value needs to be able to be changed in the inspector. 
+
+2. What method(s) does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write? 
+
+This class needs the Start() method to signal the deer to go forward once the game runs. As specified in the directions, it also needs to use the GetComponent<> method to get the NavMeshAgent Component on the Deer gameObject. 
+
+3. What should the method(s) do?
+Between both of these methods, nesting the GetComponent<> method inside the Start() method should ensure that the deer moves toward the cat once the game runs.
 
 ## Open-Source Assets
 ### W1
