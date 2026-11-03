@@ -58,6 +58,7 @@ We need a member variable to represent the Transform of the GameObject the deer 
 This class needs the Start() method to signal the deer to go forward once the game runs. As specified in the directions, it also needs to use the GetComponent<> method to get the NavMeshAgent Component on the Deer gameObject. 
 
 3. What should the method(s) do?
+
 Between both of these methods, nesting the GetComponent<> method inside the Start() method should ensure that the deer moves toward the cat once the game runs.
 
 ## Open-Source Assets
