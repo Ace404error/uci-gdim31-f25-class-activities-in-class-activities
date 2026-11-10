@@ -61,6 +61,24 @@ This class needs the Start() method to signal the deer to go forward once the ga
 
 Between both of these methods, nesting the GetComponent<> method inside the Start() method should ensure that the deer moves toward the cat once the game runs.
 
+### W7
+The BatW6 class should:
+Be attached to ALL of the Bat GameObjects as a Component.
+Have a speed value tunable in the Inspector.
+Have a method that the BatManager can call that will make the bat STOP chasing the player, and a different one that will make the bat START chasing the player. (Hint: make sure to put the keyword ‘public’ in front of these methods so that BatManager can use them- we’ll talk about what this keyword means next class.)
+
+1. What member variables does this class need?
+[SerializeField] _speed 
+_playerTransform
+
+
+2. What methods does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
+public stopChasing(), public startChasing(), Start(), Update()
+
+3. What should the method(s) do?
+public stopChasing() should disable the bats moving toward the player, public startChasing() should enable the bats moving toward the player, Start() should be used to check if startChasing or StopChasing is enabled and enable startChasing, Update() should do the same and enable or disable the bats' chasing according to their distance from the player.
+
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
