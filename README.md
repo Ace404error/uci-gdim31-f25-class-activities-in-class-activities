@@ -69,14 +69,20 @@ Have a method that the BatManager can call that will make the bat STOP chasing t
 
 Activity 1:
 1. What member variables does this class need?
+    
+    
     I predict that [SerializeField] _speed and _playerTransform will be needed as member variables.
 
 
 2. What methods does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
+    
+    
     This class needs both Unity and user created methods. Methods such as public stopChasing() and public startChasing(), while Start() and Update() are from Unity.
 
 3. What should the method(s) do?
-public stopChasing() should disable the bats moving toward the player, public startChasing() should enable the bats moving toward the player, Start() should be used to check if startChasing or StopChasing is enabled and enable startChasing, Update() should do the same and enable or disable the bats' chasing according to their distance from the player.
+
+
+    For the user created methods, public stopChasing() should disable the bats moving toward the player, and public startChasing() should enable the bats moving toward the player. For Unity methods, Start() should be used to check if startChasing or StopChasing is enabled and enable startChasing, while Update() should do the same and enable or disable the bats' chasing according to their distance from the player every frame.
 
 
 Category Assignment: Math 
