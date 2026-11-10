@@ -67,17 +67,20 @@ Be attached to ALL of the Bat GameObjects as a Component.
 Have a speed value tunable in the Inspector.
 Have a method that the BatManager can call that will make the bat STOP chasing the player, and a different one that will make the bat START chasing the player. (Hint: make sure to put the keyword ‘public’ in front of these methods so that BatManager can use them- we’ll talk about what this keyword means next class.)
 
+Activity 1:
 1. What member variables does this class need?
-[SerializeField] _speed 
-_playerTransform
+    I predict that [SerializeField] _speed and _playerTransform will be needed as member variables.
 
 
 2. What methods does this class need? Should it be something that Unity provides (like Start(), Update(), or a collision method), or one you write?
-public stopChasing(), public startChasing(), Start(), Update()
+    This class needs both Unity and user created methods. Methods such as public stopChasing() and public startChasing(), while Start() and Update() are from Unity.
 
 3. What should the method(s) do?
 public stopChasing() should disable the bats moving toward the player, public startChasing() should enable the bats moving toward the player, Start() should be used to check if startChasing or StopChasing is enabled and enable startChasing, Update() should do the same and enable or disable the bats' chasing according to their distance from the player.
 
+
+Category Assignment: Math 
+https://docs.google.com/document/d/1Fn9TGFlxzcsuaW2vjqgng_0IyirIMh9iUS6c1-b-k7M/edit?tab=t.0
 
 ## Open-Source Assets
 ### W1
