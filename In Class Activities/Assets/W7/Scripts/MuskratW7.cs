@@ -44,9 +44,13 @@ public class MuskratW7 : MonoBehaviour
         // Transform.RotateAround () https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Transform.RotateAround.html
         //
         // You might want to look below Step 3 for an example :D
+
         
         float leftright = Input.GetAxis("Horizontal");
         
+        //transform.TransformDirection(leftright * _rotationSpeed * Time.deltaTime * Vector3.up);
+        Vector3 axisUp = transform.TransformDirection(Vector3.up);
+        transform.RotateAround(_sphereTransform.position, axisUp, leftright * _rotationSpeed * Time.deltaTime);
 
 
         // STEP 3 -------------------------------------------------------------
@@ -86,6 +90,9 @@ public class MuskratW7 : MonoBehaviour
         //      like up, left, right, or forward.
 
         float leftright = Input.GetAxis("Horizontal");
+        transform.Rotate(leftright * _rotationSpeed * Time.deltaTime * Vector3.up);
+        //why does this work?
+        //we are rotating not translating
 
         // STEP 1 -------------------------------------------------------------
 
@@ -96,7 +103,12 @@ public class MuskratW7 : MonoBehaviour
         // This line of code is incorrect. 
         // Replace it with a different line of code that uses 'movement' to
         //      move the Muskrat forwards and backwards.
-        transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime;
+        //transform.position += movement * Vector3.forward * _moveSpeed * Time.deltaTime; 
+        //this line of code doesn't move the Muskrat forward once it is facing a direction different
+        //from its spawn direction
+        //transform.position = movement * _moveSpeed * Time.deltaTime;
+
+
 
         // STEP 2 -------------------------------------------------------------
 
@@ -107,8 +119,8 @@ public class MuskratW7 : MonoBehaviour
         // Use _rigidbody.linearVelocity.
         // You may also find the absolute value method, Mathf.Abs(), helpful:
         //      https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Mathf.Abs.html
+        //_rigidbody.linearVelocity = ;
 
-        
         // STEP 4 -------------------------------------------------------------
     }
 
