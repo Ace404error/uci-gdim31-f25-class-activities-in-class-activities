@@ -68,6 +68,9 @@ Activity 1:
 Category Assignment: Math 
 https://docs.google.com/document/d/1Fn9TGFlxzcsuaW2vjqgng_0IyirIMh9iUS6c1-b-k7M/edit?tab=t.0
 
+### W8
+1. I didn't actually end up figuring out what exactly was wrong in Step 2, and therefore, was inable to fix the code. At first, I was completely at a loss, as there were no errors in this line of code. However, after playtesting the game several times, I discovered that this line of code doesn't move the Muskrat forward once it is facing a direction different from its spawn direction. I have an inkling that this has something to do with the application of the local versus world space. I noticed that when the rat moves in a direction different from its spawn direction, the camera doesn't follow its movements. This causes it to look like it's moving diagonally, backward when the W key is pressed, and forward when the S key is pressed. I surmise that this is because it is operating on in the world space, rather than its own local space like it should.
+
 ## Open-Source Assets
 ### W1
 - Animals: https://assetstore.unity.com/packages/3d/characters/animals/animals-free-animated-low-poly-3d-models-260727 
